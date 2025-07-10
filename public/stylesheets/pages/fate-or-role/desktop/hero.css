@@ -515,12 +515,12 @@
 }
 @media screen and (min-width: 992px) {
   .hero__right--content p {
-    margin-bottom: calc(0.5387931034vw + 19.6551724138px);
+    margin-bottom: calc(2.6939655172vw - 1.724137931px);
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__right--content p {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 .hero__right--content ul {
