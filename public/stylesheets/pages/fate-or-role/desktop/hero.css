@@ -48,10 +48,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../../../../public/images/fate-or-role/hero/hero-bg.png);
+  background-image: url(../../../../../public/images/fate-or-role/hero/hero-bg.webp);
   opacity: 0.1;
   z-index: -1;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 .hero__left--content {
@@ -263,29 +263,29 @@
   border-radius: 100%;
 }
 .hero__authors--row img {
-  width: 61px;
+  width: 70px;
 }
 @media screen and (min-width: 992px) {
   .hero__authors--row img {
-    width: calc(6.1422413793vw + 0.0689655172px);
+    width: calc(7.5431034483vw - 4.8275862069px);
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__authors--row img {
-    width: 118px;
+    width: 140px;
   }
 }
 .hero__authors--row img {
-  height: 61px;
+  height: 70px;
 }
 @media screen and (min-width: 992px) {
   .hero__authors--row img {
-    height: calc(6.1422413793vw + 0.0689655172px);
+    height: calc(7.5431034483vw - 4.8275862069px);
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__authors--row img {
-    height: 118px;
+    height: 140px;
   }
 }
 .hero__book {
@@ -383,8 +383,17 @@
   }
 }
 .hero__right h2 {
-  width: -moz-min-content;
-  width: min-content;
+  font-size: 85px;
+}
+@media screen and (min-width: 992px) {
+  .hero__right h2 {
+    font-size: calc(0.5387931034vw + 79.6551724138px);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__right h2 {
+    font-size: 90px;
+  }
 }
 .hero__right h2 {
   padding-left: 54px;
@@ -506,12 +515,12 @@
 }
 @media screen and (min-width: 992px) {
   .hero__right--content p {
-    margin-bottom: calc(2.5862068966vw - 0.6551724138px);
+    margin-bottom: calc(0.5387931034vw + 19.6551724138px);
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__right--content p {
-    margin-bottom: 49px;
+    margin-bottom: 30px;
   }
 }
 .hero__right--content ul {
@@ -531,16 +540,16 @@
   }
 }
 .hero__right--content ul li:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 992px) {
   .hero__right--content ul li:not(:last-child) {
-    margin-bottom: calc(1.6163793103vw - 1.0344827586px);
+    margin-bottom: calc(1.2931034483vw - 4.8275862069px);
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__right--content ul li:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .hero .btn {

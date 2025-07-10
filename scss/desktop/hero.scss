@@ -17,10 +17,10 @@
 			content: '';
 			position: absolute;
 			inset: 0;
-			background-image: url(../../../../../public/images/fate-or-role/hero/hero-bg.png);
+			background-image: url(../../../../../public/images/fate-or-role/hero/hero-bg.webp);
 			opacity: 0.1;
 			z-index: -1;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 		}
 		&--content {
@@ -64,8 +64,8 @@
 			display: flex;
 			@include interpolate(gap, 992px, 1920px, 4px, 8px);
 			img {
-				@include interpolate(width, 992px, 1920px, 61px, 118px);
-				@include interpolate(height, 992px, 1920px, 61px, 118px);
+				@include interpolate(width, 992px, 1920px, 70px, 140px);
+				@include interpolate(height, 992px, 1920px, 70px, 140px);
 				object-fit: cover;
 				object-position: center;
 				border-radius: 100%;
@@ -94,7 +94,8 @@
 		@include interpolate(padding-top, 992px, 1170px,  47px, 56px);
 		@include interpolate(padding-bottom, 992px, 1920px,  34px, 66px);
 		h2 {
-			width: min-content;
+			// width: min-content;
+			@include interpolate(font-size, 992px, 1920px,  85px, 90px);
 			@include interpolate(padding-left, 992px, 1920px,  54px, 105px);
 		}
 		.star {
@@ -114,7 +115,7 @@
                 @include interpolate(font-size, 992px, 1170px, 15px, 18px);
                 // @include interpolate(font-size, 1171px, 1920px, 18px, 20px);
                 @include interpolate(width, 992px, 1920px, 261px, 505px);
-                @include interpolate(margin-bottom, 992px, 1920px, 25px, 49px);
+                @include interpolate(margin-bottom, 992px, 1920px, 25px, 30px);
                 color: #8c8c8c;
 				flex-grow: 1;
             }
@@ -122,7 +123,7 @@
                 @include interpolate(padding-left, 992px, 1920px, 25px, 40px);
                 margin-bottom: 15px;
                 li:not(:last-child){
-                    @include interpolate(margin-bottom, 992px, 1920px,  15px, 30px);
+                    @include interpolate(margin-bottom, 992px, 1920px,  8px, 20px);
                 }
             }
 		}

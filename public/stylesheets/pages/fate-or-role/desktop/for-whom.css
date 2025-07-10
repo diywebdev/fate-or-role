@@ -71,8 +71,8 @@
   gap: 10px;
   align-items: center;
   text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 300px;
+  width: 100%;
 }
 .for-whom-item .counter {
   font-weight: bold;
