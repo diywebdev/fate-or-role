@@ -1,0 +1,136 @@
+@import '../vars';
+@import '../mixins';
+.hero {
+	display: flex;
+	// display: none;
+	&__left {
+		position: relative;
+		@include interpolate(width, 992px, 1920px, 368px, 712px);
+		// height: inherit;
+		@include interpolate((padding-top, padding-bottom, padding-left, padding-right), 992px, 1920px, 34px, 64px);
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-shrink: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-image: url(../../public/images/hero/hero-bg.png);
+			opacity: 0.1;
+			z-index: -1;
+			background-size: 100%;
+			background-position: center;
+		}
+		&--content {
+			@include interpolate(margin-top, 992px, 1170px, 79px, 93px);
+			@include interpolate(width, 992px, 1920px, 242px, 469px);
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			color: #fff;
+			h4 {
+				@include interpolate(margin-bottom, 992px, 1170px,  13px, 25px);
+			}
+		}
+		&--descr {
+			color: #6565e1;
+			@include interpolate(width, 992px, 1920px, 167px, 323px);
+		}
+		.star-1 {
+			@include interpolate(width, 992px, 1920px, 22px, 43px);
+			@include interpolate(top, 992px, 1920px, 68px, 131px);
+			@include interpolate(left, 992px, 1920px, 254px, 492px);
+		}
+		.star-2 {
+			@include interpolate(width, 992px, 1920px, 34px, 66px);
+			@include interpolate(top, 992px, 1170px, 260px, 307px);
+			@include interpolate(top, 1171px, 1920px, 307px, 380px);
+			@include interpolate(left, 992px, 1920px, 178px, 345px);
+			transform: rotate(-50deg);
+		}
+	}
+	&__logo {
+		@include interpolate(width, 992px, 1920px, 127px, 246px);
+	}
+	&__authors {
+		p {
+			color: #6565e1;
+			@include interpolate(margin-bottom, 992px, 1920px,  13px, 25px);
+		}
+		&--row {
+			display: flex;
+			@include interpolate(gap, 992px, 1920px, 4px, 8px);
+			img {
+				@include interpolate(width, 992px, 1920px, 61px, 118px);
+				@include interpolate(height, 992px, 1920px, 61px, 118px);
+				object-fit: cover;
+				object-position: center;
+				border-radius: 100%;
+			}
+		}
+	}
+	&__book {
+		position: absolute;
+		bottom: 0;
+		@include interpolate(left, 992px, 1170px, 131px, 155px);
+		@include interpolate(left, 1171px, 1920px, 155px, 300px);
+		@include interpolate(width, 992px, 1170px, 499px, 588px);
+		@include interpolate(width, 1171px, 1920px, 588px, 965px);
+		z-index: 10;
+		img {
+			width: 100%;
+		}
+	}
+	&__right {
+		position: relative;
+		height: inherit;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include interpolate(padding-top, 992px, 1170px,  47px, 56px);
+		@include interpolate(padding-bottom, 992px, 1920px,  34px, 66px);
+		h2 {
+			width: min-content;
+			@include interpolate(padding-left, 992px, 1920px,  54px, 105px);
+		}
+		.star {
+			@include interpolate(width, 992px, 1920px, 22px, 43px);
+			@include interpolate(top, 992px, 1920px, 142px, 274px);
+			@include interpolate(right, 992px, 1920px, 51px, 98px);
+		}
+		&--content {
+            color: #3c3c3c;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+			justify-content: space-between;
+            @include interpolate(padding-top, 992px, 1170px, 58px, 68px);
+			@include interpolate(padding-left, 992px, 1920px, 215px, 415px);
+            p{
+                @include interpolate(font-size, 992px, 1170px, 15px, 18px);
+                // @include interpolate(font-size, 1171px, 1920px, 18px, 20px);
+                @include interpolate(width, 992px, 1920px, 261px, 505px);
+                @include interpolate(margin-bottom, 992px, 1920px, 25px, 49px);
+                color: #8c8c8c;
+				flex-grow: 1;
+            }
+            ul{
+                @include interpolate(padding-left, 992px, 1920px, 25px, 40px);
+                margin-bottom: 15px;
+                li:not(:last-child){
+                    @include interpolate(margin-bottom, 992px, 1920px,  15px, 30px);
+                }
+            }
+		}
+	}
+	.btn{
+		font-weight: normal;
+	}
+}
+.hero-book-mobile, .hero-content-mobile{
+	display: none;
+}
