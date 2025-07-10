@@ -58,16 +58,7 @@ form input {
     padding-left: 30px;
   }
 }
-form input::-webkit-input-placeholder {
-  color: #C7C7C7;
-}
 form input::-moz-placeholder {
-  color: #C7C7C7;
-}
-form input:-ms-input-placeholder {
-  color: #C7C7C7;
-}
-form input::-ms-input-placeholder {
   color: #C7C7C7;
 }
 form input::placeholder {
@@ -75,4 +66,4 @@ form input::placeholder {
 }
 form input:focus {
   outline: 2px solid #C5A23B;
-}
+}/*# sourceMappingURL=form.css.map */

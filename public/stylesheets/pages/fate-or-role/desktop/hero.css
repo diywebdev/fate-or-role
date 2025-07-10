@@ -1,23 +1,13 @@
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .hero__left {
   position: relative;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 .hero__left {
   width: 368px;
@@ -58,26 +48,17 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../../../../public/images/human-development-course/hero/hero-bg.png);
+  background-image: url(../../public/images/hero/hero-bg.png);
   opacity: 0.1;
   z-index: -1;
   background-size: 100%;
   background-position: center;
 }
 .hero__left--content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fff;
 }
 .hero__left--content {
@@ -175,9 +156,7 @@
   }
 }
 .hero__left .star-2 {
-  -webkit-transform: rotate(-50deg);
-      -ms-transform: rotate(-50deg);
-          transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
 .hero__left .star-2 {
   width: 34px;
@@ -261,8 +240,6 @@
   }
 }
 .hero__authors--row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .hero__authors--row {
@@ -374,19 +351,10 @@
 .hero__right {
   position: relative;
   height: inherit;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero__right {
   padding-top: 47px;
@@ -415,7 +383,6 @@
   }
 }
 .hero__right h2 {
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
@@ -473,19 +440,10 @@
 }
 .hero__right--content {
   color: #3c3c3c;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero__right--content {
   padding-top: 58px;
@@ -515,9 +473,7 @@
 }
 .hero__right--content p {
   color: #8c8c8c;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .hero__right--content p {
   font-size: 15px;
@@ -593,4 +549,4 @@
 
 .hero-book-mobile, .hero-content-mobile {
   display: none;
-}
+}/*# sourceMappingURL=hero.css.map */

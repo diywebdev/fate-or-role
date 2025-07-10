@@ -1,10 +1,6 @@
 .video {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   z-index: 10000;
 }
 .video {
@@ -30,13 +26,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url(../../../../images/human-development-course/video/bg.jpg);
+  background: url(../images/video/bg.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 .video h2 {
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   text-align: left;
@@ -62,25 +57,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-      -ms-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   border-radius: 50%;
   background-color: rgba(216, 40, 50, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .play-btn {
   width: 140px;
@@ -99,22 +83,14 @@
   }
 }
 .play-btn:hover {
-  -webkit-transform: translate(-50%, -50%) scale(0.95);
-      -ms-transform: translate(-50%, -50%) scale(0.95);
-          transform: translate(-50%, -50%) scale(0.95);
+  transform: translate(-50%, -50%) scale(0.95);
 }
 .play-btn .circle {
   width: 64%;
   height: 64%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #D82832;
   border-radius: 50%;
 }
@@ -126,7 +102,6 @@
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 .player-overlay.active {
@@ -137,15 +112,9 @@
 .close-video-player {
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 32px;
   position: absolute;
   right: 10px;
@@ -153,7 +122,6 @@
   color: #fff;
   cursor: pointer;
   opacity: 0.6;
-  -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 .close-video-player:hover {
@@ -164,9 +132,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
   width: 80%;
   aspect-ratio: 16/9;
@@ -183,16 +149,13 @@
   position: relative;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 80px;
   height: 80px;
 }
 
 .lds-ring div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   position: absolute;
   width: 64px;
@@ -200,44 +163,27 @@
   margin: 8px;
   border: 8px solid #c5a23b;
   border-radius: 50%;
-  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #c5a23b transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
-  -webkit-animation-delay: -0.45s;
-          animation-delay: -0.45s;
+  animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
-}
-
-@-webkit-keyframes lds-ring {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation-delay: -0.15s;
 }
 
 @keyframes lds-ring {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-}
+}/*# sourceMappingURL=video.css.map */

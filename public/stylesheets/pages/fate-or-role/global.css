@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -71,7 +70,6 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
@@ -135,13 +133,11 @@ section h2 {
 
 .btn {
   display: inline-block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
   background-color: #C5A23B;
   color: #fff;
-  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   cursor: pointer;
 }
@@ -217,14 +213,11 @@ section h2 {
 
 .calc {
   width: 200px;
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 10px;
   z-index: 15000;
   font-size: 16px;
@@ -234,15 +227,9 @@ section h2 {
   display: none;
 }
 .calc .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   gap: 5px;
   margin-bottom: 10px;
 }
@@ -251,9 +238,7 @@ section h2 {
 }
 .calc input {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 5px;
 }
 
@@ -265,41 +250,28 @@ section h2 {
   opacity: 0;
 }
 .animation-1.active {
-  -webkit-animation: fade-in 2s ease-in-out 0s 1 forwards;
-          animation: fade-in 2s ease-in-out 0s 1 forwards;
+  animation: fade-in 2s ease-in-out 0s 1 forwards;
 }
 
 .animation-2 {
   opacity: 0;
 }
 .animation-2.active {
-  -webkit-animation: fade-in 2s ease-in-out 0.5s 1 forwards;
-          animation: fade-in 2s ease-in-out 0.5s 1 forwards;
+  animation: fade-in 2s ease-in-out 0.5s 1 forwards;
 }
 
 .animation-3 {
   opacity: 0;
 }
 .animation-3.active {
-  -webkit-animation: fade-in-up 1s ease-in-out 1s 1 forwards;
-          animation: fade-in-up 1s ease-in-out 1s 1 forwards;
+  animation: fade-in-up 1s ease-in-out 1s 1 forwards;
 }
 
 .animation-4 {
   opacity: 0;
 }
 .animation-4.active {
-  -webkit-animation: fade-in 2s ease-in-out 1s 1 forwards;
-          animation: fade-in 2s ease-in-out 1s 1 forwards;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fade-in 2s ease-in-out 1s 1 forwards;
 }
 
 @keyframes fade-in {
@@ -310,45 +282,24 @@ section h2 {
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(150px);
-            transform: translateY(150px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    -webkit-transform: translateY(150px);
-            transform: translateY(150px);
+    transform: translateY(150px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .menu-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 6px;
 }
 .menu-btn.burger-menu-close {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .menu-btn.burger-menu-close img {
   width: 9px;
@@ -357,11 +308,8 @@ section h2 {
 .menu-btn img {
   width: 11px;
   height: 9px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .menu-btn:hover img {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
-}
+  transform: scale(1.05);
+}/*# sourceMappingURL=global.css.map */

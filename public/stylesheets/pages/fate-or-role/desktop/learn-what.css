@@ -63,8 +63,6 @@
   }
 }
 .learn-what-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .learn-what-item {
@@ -136,4 +134,4 @@
 }
 .learn-what-item li:not(:last-child) {
   margin-bottom: 10px;
-}
+}/*# sourceMappingURL=learn-what.css.map */
