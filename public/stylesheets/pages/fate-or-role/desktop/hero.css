@@ -48,7 +48,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../public/images/hero/hero-bg.png);
+  background-image: url(../../../../../public/images/fate-or-role/hero/hero-bg.png);
   opacity: 0.1;
   z-index: -1;
   background-size: 100%;

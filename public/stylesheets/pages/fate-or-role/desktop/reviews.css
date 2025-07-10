@@ -106,7 +106,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-image: url(../images/icons/slider-arrow.svg);
+  background-image: url(../../../../../public/images/fate-or-role/icons/slider-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
