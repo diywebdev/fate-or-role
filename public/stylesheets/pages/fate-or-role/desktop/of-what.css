@@ -8,23 +8,27 @@
   justify-content: space-between;
 }
 .of-what-left {
-  padding-top: 34px;
-  padding-bottom: 34px;
-  padding-left: 34px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 }
 @media screen and (min-width: 992px) {
   .of-what-left {
-    padding-top: calc(3.4482758621vw - 0.2068965517px);
-    padding-bottom: calc(3.4482758621vw - 0.2068965517px);
-    padding-left: calc(3.4482758621vw - 0.2068965517px);
+    padding-top: calc(1.2931034483vw + 11.1724137931px);
+    padding-bottom: calc(1.2931034483vw + 11.1724137931px);
+    padding-left: calc(1.2931034483vw + 11.1724137931px);
   }
 }
 @media screen and (min-width: 1920px) {
   .of-what-left {
-    padding-top: 66px;
-    padding-bottom: 66px;
-    padding-left: 66px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 36px;
   }
+}
+.of-what-wrapper {
+  flex-grow: 1;
+  padding-top: 60px;
 }
 .of-what-right {
   flex-shrink: 0;
@@ -53,10 +57,9 @@
 }
 .of-what-right-decor-img {
   width: 100%;
-  mix-blend-mode: luminosity;
   border-radius: 15px;
   margin-bottom: 20px;
-  opacity: 0.3 !important;
+  opacity: 0.2 !important;
 }
 .of-what-right-content {
   display: flex;
@@ -144,6 +147,7 @@
 .of-what-item {
   color: #1f1f1f;
   display: flex;
+  align-items: center;
 }
 .of-what-item {
   font-size: 21px;
@@ -175,7 +179,7 @@
   font-weight: bold;
   line-height: 1;
   color: #C5A23B;
-  text-align: right;
+  text-align: left;
 }
 .of-what-item .number {
   font-size: 42px;
@@ -188,32 +192,6 @@
 @media screen and (min-width: 1171px) {
   .of-what-item .number {
     font-size: 50px;
-  }
-}
-.of-what-item .number {
-  min-width: 48px;
-}
-@media screen and (min-width: 992px) {
-  .of-what-item .number {
-    min-width: calc(5.0279329609vw - 1.8770949721px);
-  }
-}
-@media screen and (min-width: 1171px) {
-  .of-what-item .number {
-    min-width: 57px;
-  }
-}
-.of-what-item .number {
-  margin-top: 8px;
-}
-@media screen and (min-width: 992px) {
-  .of-what-item .number {
-    margin-top: calc(1.1173184358vw - 3.0837988827px);
-  }
-}
-@media screen and (min-width: 1171px) {
-  .of-what-item .number {
-    margin-top: 10px;
   }
 }
 .of-what .text-center {
