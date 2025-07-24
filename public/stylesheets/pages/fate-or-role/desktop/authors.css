@@ -10,14 +10,14 @@
 }
 @media screen and (min-width: 992px) {
   .authors {
-    padding-top: calc(3.4482758621vw - 0.2068965517px);
-    padding-bottom: calc(3.4482758621vw - 0.2068965517px);
+    padding-top: calc(0vw + 34px);
+    padding-bottom: calc(0vw + 34px);
   }
 }
 @media screen and (min-width: 1920px) {
   .authors {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 .authors::after {
@@ -38,12 +38,12 @@
 }
 @media screen and (min-width: 992px) {
   .authors h2 {
-    font-size: calc(6.0344827586vw - 0.8620689655px);
+    font-size: calc(4.9568965517vw + 9.8275862069px);
   }
 }
 @media screen and (min-width: 1920px) {
   .authors h2 {
-    font-size: 115px;
+    font-size: 105px;
   }
 }
 .authors h2 {

@@ -1,7 +1,7 @@
 @import '../mixins';
 
 .authors{
-	@include interpolate((padding-top, padding-bottom), 992px, 1920px, 34px, 66px);
+	@include interpolate((padding-top, padding-bottom), 992px, 1920px, 34px, 34px);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -18,7 +18,7 @@
 	}
 	h2{
 		// font-size: 70px;
-		@include interpolate(font-size, 992px, 1920px, 59px, 115px);
+		@include interpolate(font-size, 992px, 1920px, 59px, 105px);
 		@include interpolate(max-width, 992px, 1920px, 821px, 1589px);
 		flex-grow: 1;
 		margin: 17px auto 0;
